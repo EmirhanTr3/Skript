@@ -26,6 +26,8 @@ import org.bukkit.entity.Piglin;
 import org.bukkit.entity.Zoglin;
 import org.bukkit.entity.Zombie;
 
+import io.papermc.paper.entity.TeleportFlag;
+
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 
@@ -163,7 +165,9 @@ public class EntityUtils {
 			location.setWorld(entity.getWorld());
 		}
 
-		entity.teleport(location);
+		// Due to issues with riding, the following is no longer suitable;
+		//entity.teleport(location);
+		entity.teleport(location, TeleportFlag.EntityState.RETAIN_PASSANGERS)
 	}
 
 }
