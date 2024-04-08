@@ -167,7 +167,7 @@ public class EntityUtils {
 
 		// Due to issues with riding, the following is no longer suitable;
 		//entity.teleport(location);
-		entity.teleport(location, TeleportFlag.EntityState.RETAIN_PASSANGERS)
+		entity.teleport(location, TeleportFlag.EntityState.RETAIN_PASSANGERS);
 	}
 
 }
