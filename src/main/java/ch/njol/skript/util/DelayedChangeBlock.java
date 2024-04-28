@@ -516,4 +516,10 @@ public class DelayedChangeBlock implements Block {
 		return block.breakNaturally(tool, triggerEffect, dropExperience);
 	}
 
+	@Override
+	public void fluidTick() {
+		// Dummy code here lalalal
+		String s = "t";
+	}
+
 }
