@@ -36,7 +36,6 @@ dependencies {
 	implementation group: 'net.milkbowl.vault', name: 'Vault', version: '1.7.3', {
 		exclude group: 'org.bstats', module: 'bstats-bukkit'
 	}
-	implementation group: 'io.papermc', name: 'paperlib', version: '1.0.7'
 
 	implementation fileTree(dir: 'lib', include: '*.jar')
 
