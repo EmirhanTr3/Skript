@@ -534,4 +534,8 @@ public class BlockStateBlock implements Block {
 		return state.getBlock().breakNaturally(tool, triggerEffect, dropExperience);
 	}
 
+	@Override
+	public void fluidTick() {
+		super.fluidTick()
+	}
 }
