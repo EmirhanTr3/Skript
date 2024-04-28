@@ -536,6 +536,7 @@ public class BlockStateBlock implements Block {
 
 	@Override
 	public void fluidTick() {
-		super.fluidTick();
+		// Dummy code here lalalal
+		String s = "t";
 	}
 }
