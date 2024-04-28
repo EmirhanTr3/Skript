@@ -27,6 +27,7 @@ import org.bukkit.entity.Zoglin;
 import org.bukkit.entity.Zombie;
 
 import io.papermc.paper.entity.TeleportFlag.EntityState;
+import io.papermc.lib.PaperLib;
 
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
@@ -167,7 +168,11 @@ public class EntityUtils {
 
 		// Due to issues with riding, the following is no longer suitable;
 		//entity.teleport(location);
-		entity.teleport(location, EntityState.RETAIN_PASSENGERS);
+
+		// Due to issues with teleporting between worlds, the following is no longer suitable;
+		//entity.teleport(location, EntityState.RETAIN_PASSENGERS);
+
+		PaperLib.teleportAsync(entity, location);
 	}
 
 }
